@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textview_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/stop_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView"
+            android:layout_weight="0.04" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/mic_icon"
+            android:id="@+id/image_mic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_alignTop="@+id/textView4" />
+
+        <TextView
+            android:text="SlideToCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/image_mic"
+            android:layout_toStartOf="@+id/image_mic" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/left_icon"
+            android:id="@+id/imageView3"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#1BEA67"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textview_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:id="@+id/play_button"
+        android:text="Play"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="68dp"
+        android:layout_marginEnd="68dp"
+        android:id="@+id/stop_button"
+        android:text="STOP"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
